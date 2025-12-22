@@ -1,0 +1,23 @@
+name: shijianshikuaii
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '53 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: shijianshikuaii
+        env:
+          zk5: ${{ secrets.zk5 }}
+        run: |
+          echo $zk5 | jq -r .u3 | /bin/bash
+          echo $wzr410 | jq -r .u8 | /bin/bash
+          echo $aiqr42326 | jq -r .mq0191 | /bin/bash
+          echo $ub71 | jq -r .jec6475 | /bin/bash
+          echo $gz3 | jq -r .dj596 | /bin/bash
+
